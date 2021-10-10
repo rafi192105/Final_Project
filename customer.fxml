@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="custInfoController">
+   <children>
+      <Label layoutX="176.0" layoutY="24.0" prefHeight="56.0" prefWidth="268.0" text="Customer Information" textFill="#1e6ad6">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="107.0" prefHeight="56.0" prefWidth="92.0" text="Name :" textFill="#1e6ad6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="171.0" prefHeight="56.0" prefWidth="128.0" text="Phone Num  :" textFill="#1e6ad6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="227.0" prefHeight="56.0" prefWidth="106.0" text="Address  :" textFill="#1e6ad6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="custInfoSave" layoutX="154.0" layoutY="314.0" mnemonicParsing="false" onAction="#custInfoInFile" prefHeight="46.0" prefWidth="106.0" text="Save" textFill="#1e6ad6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="custLogout" layoutX="260.0" layoutY="390.0" mnemonicParsing="false" onAction="#custLogoutAction" prefHeight="56.0" prefWidth="113.0" text="Logout" textFill="#d42055">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="foodlist" layoutX="373.0" layoutY="314.0" mnemonicParsing="false" onAction="#foodListAction" prefHeight="46.0" prefWidth="113.0" text="Show Item" textFill="#1e6ad6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="name" layoutX="148.0" layoutY="123.0" prefHeight="25.0" prefWidth="371.0" />
+      <TextField fx:id="phnNum" layoutX="197.0" layoutY="187.0" prefHeight="25.0" prefWidth="371.0" />
+      <TextField fx:id="address" layoutX="175.0" layoutY="243.0" prefHeight="25.0" prefWidth="371.0" />
+   </children>
+</Pane>
