@@ -1,105 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.managerController">
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.managerController">
    <children>
-      <VBox layoutX="14.0" layoutY="90.0" prefHeight="304.0" prefWidth="121.0" spacing="15.0">
+      <VBox layoutX="22.0" layoutY="114.0" prefHeight="358.0" prefWidth="121.0" spacing="15.0">
          <children>
-            <MenuButton fx:id="appetizer" mnemonicParsing="false" prefHeight="35.0" prefWidth="112.0" text="Appetizers">
-              <items>
-                <MenuItem fx:id="seafoodSoup" mnemonicParsing="false" onAction="#seafoodSoupAction" text="Seafood Soup" />
-                <MenuItem fx:id="frenchFries" mnemonicParsing="false" onAction="#frenchFriesAction" text="French Fries" />
-                  <MenuItem fx:id="garlicBread" mnemonicParsing="false" onAction="#garlicBreadAction" text="Garlic Bread" />
-                  <MenuItem fx:id="garlicBread1" mnemonicParsing="false" onAction="#garlicBreadAction" text="Creamy Chicken Mashroom Soup" />
-                  <MenuItem fx:id="garlicBread2" mnemonicParsing="false" onAction="#garlicBreadAction" text="Grilled Chicken with Avocado Salad" />
-                  <MenuItem fx:id="frenchFries1" mnemonicParsing="false" onAction="#frenchFriesAction" text="Caesar Salad" />
-              </items>
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
+            <Button mnemonicParsing="false" onAction="#appetizerAction" prefHeight="46.0" prefWidth="114.0" style="-fx-background-color: #E8E1F7;" text="Appetizers" textFill="#27257e">
                <font>
-                  <Font name="System Bold Italic" size="12.0" />
+                  <Font name="System Bold Italic" size="16.0" />
                </font>
-            </MenuButton>
-            <MenuButton fx:id="appetizer1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="112.0" text="Desserts">
-               <items>
-                  <MenuItem fx:id="seafoodSoup1" mnemonicParsing="false" onAction="#seafoodSoupAction" text="Cheese Cake" />
-                  <MenuItem fx:id="frenchFries1" mnemonicParsing="false" onAction="#frenchFriesAction" text="Ice-cream Roll" />
-                  <MenuItem fx:id="garlicBread1" mnemonicParsing="false" onAction="#garlicBreadAction" text="Garlic Bread" />
-                  <MenuItem fx:id="garlicBread11" mnemonicParsing="false" onAction="#garlicBreadAction" text="Molten Cake" />
-                  <MenuItem fx:id="garlicBread21" mnemonicParsing="false" onAction="#garlicBreadAction" text="Cinnabon" />
-                  <MenuItem fx:id="frenchFries11" mnemonicParsing="false" onAction="#frenchFriesAction" text="Chocolate Fudge" />
-                  <MenuItem fx:id="garlicBread211" mnemonicParsing="false" onAction="#garlicBreadAction" text="Brownies with Ice-cream" />
-               </items>
+            </Button>
+            <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#dessertAction" prefHeight="46.0" prefWidth="114.0" style="-fx-background-color: #E8E1F7;" text="Desserts" textFill="#27257e">
                <font>
-                  <Font name="System Bold Italic" size="12.0" />
+                  <Font name="System Bold Italic" size="16.0" />
                </font>
-            </MenuButton>
-            <MenuButton fx:id="appetizer2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="112.0" text="Drinks">
-               <items>
-                  <MenuItem fx:id="seafoodSoup2" mnemonicParsing="false" onAction="#seafoodSoupAction" text="Iced Tea" />
-                  <MenuItem fx:id="frenchFries1" mnemonicParsing="false" onAction="#frenchFriesAction" text="Kiwi Smoothie" />
-                  <MenuItem fx:id="garlicBread1" mnemonicParsing="false" onAction="#garlicBreadAction" text="Oreo MilkShake" />
-                  <MenuItem fx:id="garlicBread12" mnemonicParsing="false" onAction="#garlicBreadAction" text="Blueberry Mojito" />
-                  <MenuItem fx:id="frenchFries12" mnemonicParsing="false" onAction="#frenchFriesAction" text="Espresso" />
-               </items>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#drinkAction" prefHeight="48.0" prefWidth="114.0" style="-fx-background-color: #E8E1F7;" text="Drinks" textFill="#27257e">
                <font>
-                  <Font name="System Bold Italic" size="12.0" />
+                  <Font name="System Bold Italic" size="16.0" />
                </font>
-            </MenuButton>
-            <MenuButton mnemonicParsing="false" prefHeight="33.0" prefWidth="114.0" text="Pasta">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Chicken Lasagna" />
-                  <MenuItem mnemonicParsing="false" text="Salmon Lasagna" />
-                  <MenuItem mnemonicParsing="false" text="Veal Noodles" />
-                  <MenuItem mnemonicParsing="false" text="Chicken Pesto Pasta" />
-                  <MenuItem mnemonicParsing="false" text="Mac &amp; Cheese Chicken" />
-              </items>
+            </Button>
+            <Button layoutX="10.0" layoutY="213.0" mnemonicParsing="false" onAction="#pastaAction" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: #E8E1F7;" text="Pasta" textFill="#27257e">
                <font>
-                  <Font name="System Bold Italic" size="12.0" />
+                  <Font name="System Bold Italic" size="16.0" />
                </font>
-            </MenuButton>
-            <MenuButton layoutX="10.0" layoutY="157.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="114.0" text="Pizza">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Seafood Pizza" />
-                  <MenuItem mnemonicParsing="false" text="Pepperoni Pizza" />
-                  <MenuItem mnemonicParsing="false" text="Chicken Ranch" />
-                  <MenuItem mnemonicParsing="false" text="Cheese Lovers Pizza" />
-                  <MenuItem mnemonicParsing="false" text="Meat Lovers Pizza" />
-               </items>
+            </Button>
+            <Button layoutX="10.0" layoutY="217.0" mnemonicParsing="false" onAction="#pizzaAction" prefHeight="48.0" prefWidth="114.0" style="-fx-background-color: #E8E1F7;" text="Pizza" textFill="#27257e">
                <font>
-                  <Font name="System Bold Italic" size="12.0" />
+                  <Font name="System Bold Italic" size="16.0" />
                </font>
-            </MenuButton>
-            <MenuButton layoutX="10.0" layoutY="201.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="114.0" text="Burger">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Classic Chicken Burger" />
-                  <MenuItem mnemonicParsing="false" text="Cheese Burger" />
-                  <MenuItem mnemonicParsing="false" text="Crispy Chicken Sandwich" />
-                  <MenuItem mnemonicParsing="false" text="Fried Shrimp Sandwich" />
-               </items>
+            </Button>
+            <Button layoutX="10.0" layoutY="221.0" mnemonicParsing="false" onAction="#burgerAction" prefHeight="43.0" prefWidth="114.0" style="-fx-background-color: #E8E1F7;" text="Burger" textFill="#27257e">
                <font>
-                  <Font name="System Bold Italic" size="12.0" />
+                  <Font name="System Bold Italic" size="16.0" />
                </font>
-            </MenuButton>
+            </Button>
          </children>
       </VBox>
-      <VBox layoutX="15.0" layoutY="9.0" prefHeight="81.0" prefWidth="570.0">
+      <VBox layoutX="15.0" layoutY="9.0" prefHeight="95.0" prefWidth="723.0" style="-fx-background-color: #E8E1F7;">
          <children>
-            <Label prefHeight="44.0" prefWidth="526.0" text="Label" />
+            <Label alignment="CENTER" prefHeight="54.0" prefWidth="722.0" text="Restaurant Management System" textFill="#27257e">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font></Label>
+            <Label prefHeight="35.0" prefWidth="121.0" text="Menu Items" textFill="#27257e">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
          </children>
       </VBox>
-      <Label layoutX="332.0" layoutY="221.0" prefHeight="35.0" prefWidth="121.0" text="Menu Items" textFill="#27257e">
+      <VBox fx:id="showTables" alignment="CENTER" layoutX="147.0" layoutY="109.0" prefHeight="455.0" prefWidth="589.0" />
+      <Button layoutX="31.0" layoutY="520.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="35.0" prefWidth="81.0" text="Logout" textFill="#b70e0e">
          <font>
-            <Font name="System Bold Italic" size="18.0" />
+            <Font name="System Bold Italic" size="14.0" />
          </font>
-      </Label>
+      </Button>
+      <Button layoutX="31.0" layoutY="479.0" mnemonicParsing="false" onAction="#backAction" prefHeight="35.0" prefWidth="81.0" text="Back" textFill="#181a1b">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
    </children>
 </Pane>
